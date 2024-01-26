@@ -5,9 +5,9 @@ body {
 
 nav {
     background-color: #ff9800;
-    padding: 15px;
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     color: white;
 }
@@ -26,6 +26,47 @@ nav {
     color: white;
     font-weight: bold;
 }
+
+.parentContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.container{
+    height: 200px;
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px 10px;
+
+}
+
+.image{
+    height: 120px;
+    width: 130px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(200, 200, 200);
+}
+
+button{
+    height: 25px;
+    width: 70px;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: 2.5px;
+    
+}
+
+#details{
+
+}
+
+#ordernow{
+
+}
+
 
 .hero {
     text-align: center;
