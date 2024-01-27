@@ -1,15 +1,25 @@
-body {
+*{
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    padding: 0;
+    border: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-nav {
+
+.nav {
+    height: 80px;
     background-color: #ff9800;
-    padding: 20px;
+    border-bottom: 5px solid #bababa;
     display: flex;
     justify-content:space-between;
     align-items: center;
     color: white;
+}
+
+.nav .logo{
+    font-size: 2.5vw;
+    font-weight: 700;
+    margin-left: 20px;
 }
 
 .nav-links {
@@ -17,15 +27,72 @@ nav {
     display: flex;
 }
 
-.nav-links li {
-    margin-right: 20px;
+.nav-links li{
+    height: 25px;
+    width: 65px;
+    margin-right: 1vw;
+    border: 2px solid transparent;
+    border-radius: 5px;
 }
 
-.nav-links a {
+.nav-links li:hover{
+    border: 2px solid black;
+    
+}
+
+.nav-links li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
 }
+
+.hero {
+    height: 45vw;
+    width: 100%;
+    background-image: url("backgroundwctm.jpeg");
+    background-size: cover;
+    text-align: center;
+    opacity: 0.8;
+    /* background-color: #ead196; */
+}
+
+.background-text{
+    padding-top: 15vw;
+    
+}
+
+.background-text h1{
+    font-size: 3vw;
+    font-weight: 900;
+}
+
+.background-text p{
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1vw 1.5vw;
+    margin-top: 2vw;
+    text-decoration: none;
+    background-color: #ff9800;
+    color: white;
+    border: 3px solid transparent;
+    border-radius: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 2vw;
+}
+
+.cta-button:hover{
+    border: 3px solid black;
+}
+
 
 .parentContainer{
     display: flex;
@@ -59,31 +126,8 @@ button{
     
 }
 
-#details{
-
-}
-
-#ordernow{
-
-}
 
 
-.hero {
-    text-align: center;
-    padding: 50px;
-    background-color: #ead196;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    text-decoration: none;
-    background-color: #333;
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-}
 
 
 .quick-links {
@@ -106,5 +150,24 @@ button{
     text-decoration: none;
     color: #333;
     font-weight: bold;
+}
+
+
+@media (max-width: 650px) {
+    .nav .logo{
+        font-size: 3.5vw;
+    }
+    .nav-links li{
+        margin-right: 2vh;
+    }
+    .background-text h1{
+        font-size: 4vw;
+        font-weight: 900;
+    }
+
+    .background-text p{
+        font-size: 3vw;
+        font-weight: 700;
+    }
 }
 
